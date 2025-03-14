@@ -1,0 +1,115 @@
+:root {
+  --white-color: #fff;
+  --primary-black-color: #1f1f1f;
+  --secondary-black-color: #2c2a29;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.6rem;
+  --spacing-xl: 3.2rem;
+  --rounded-lg: 1.6rem;
+  --background-color: #f4f0ea;
+}
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 2.2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.gap-xs {
+  gap: var(--spacing-xs);
+}
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+.gap-md {
+  gap: var(--spacing-md);
+}
+.gap-lg {
+  gap: var(--spacing-lg);
+}
+.gap-xl {
+  gap: var(--spacing-xl);
+}
+
+.rounded-lg {
+  border-radius: var(--rounded-lg);
+}
+
+.flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  color: var(--primary-black-color);
+  font-size: 6.4rem;
+  line-height: 74px;
+  font-weight: 400;
+
+  font-family: "Lora", serif;
+}
+
+.sub-title {
+  color: var(--secondary-black-color);
+  font-size: 4rem;
+  line-height: 54px;
+  font-weight: 400;
+  font-family: "Lora", serif;
+}
+
+.small-title {
+  color: var(--primary-black-color);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.text,
+.description {
+  font-weight: 400;
+}
+.text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--primary-black-color);
+}
+.description {
+  text-indent: 36px;
+  font-size: 1.6rem;
+  color: var(--secondary-black-color);
+}
+
+@media screen and (max-width: 767px) {
+  .title,
+  .sub-title {
+    font-size: 3.2rem;
+    line-height: 42px;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+  .small-title {
+    font-size: 1.8rem;
+  }
+}
